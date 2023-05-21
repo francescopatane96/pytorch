@@ -212,7 +212,7 @@ def grad(
     retain_graph: Optional[bool] = None,
     create_graph: bool = False,
     only_inputs: bool = True,
-    allow_unused: Optional[bool] = None,
+    allow_unused: Optional[bool] = True,
     is_grads_batched: bool = False,
     materialize_grads: bool = False,
 ) -> Tuple[torch.Tensor, ...]:
